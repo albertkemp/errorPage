@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Error 404</title>
-  </head>
-  <body>
-    <h1>Error 404.</h1>
-    <p>You do not have access to Max Li's news page for posting inappropriate comments.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Error Page</title>
+    <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.error-container {
+    text-align: center;
+}
+
+.penguin {
+    width: 150px;
+    height: 200px;
+    background-image: url('images/penguin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: penguinSlide 2s infinite alternate;
+    margin:auto;
+}
+
+.error-message {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+@keyframes penguinSlide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="penguin"></div>
+        <h2>Error 404.</h2>
+        <p class="error-message">You do not have access to MillionNews for posting inappropriate content.</p>
+    </div>
+</body>
 </html>
