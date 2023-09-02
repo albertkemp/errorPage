@@ -6,5 +6,11 @@
     <body>
         <h1>Error 404</h1>
         <p>Your access to MillionNews is denied for posting inappropriate comments.</p>
+        <script>
+            window.history.pushState(null, null, window.location.href);
+window.onpopstate = function () {
+    window.history.go(1);
+};
+        </script>
     </body>
 </html>
